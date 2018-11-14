@@ -1,17 +1,18 @@
 <template>
-  <div class="home is-primary">
-    <HelloWorld/>
+  <div class="home home--body">
+    <router-link :to="{ name: 'main'}">
+      <message msg="asd"></message>
+    </router-link>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Message from '@/components/Message';
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Message,
   }
 }
 </script>
