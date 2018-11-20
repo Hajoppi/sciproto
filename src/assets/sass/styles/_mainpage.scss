@@ -1,0 +1,19 @@
+.mainpage {
+  margin: auto;
+  width: 90%;
+}
+
+.mainpage__label {
+  @extend .label;
+  flex: 1;
+}
+
+.mainpage__field {
+  @extend .field;
+  display: flex;
+  flex-direction: row
+}
+.mainpage__control {
+  @extend .control;
+  flex: 1;
+}

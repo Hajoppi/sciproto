@@ -1,11 +1,12 @@
 // src/assets/sass/main.scss
 $progress-value-background-color: #d1ad26;
 @import '~bulma/bulma';
-@import './home/body';
-html, body {
-  height: 100%;
-}
-#app {
-  height: 100%;
+@import './styles/body';
+@import './styles/mainpage';
+@import './styles/chart';
+.container {
   background-color: $primary;
+  overflow: hidden;
+  font-size: 2em;
+  padding: 1em;
 }
