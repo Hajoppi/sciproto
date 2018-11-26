@@ -1,5 +1,5 @@
 <template>
-  <div class="mainpage">
+  <div class="container">
     <div class="title">Tervetuloa</div>
     <p>Aseta ensin omat parametrisi, jotta voimme antaa sinulle parhaan mahdolliset tuen! :-)</p>
     <form>
