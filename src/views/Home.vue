@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="">
     <router-link :to="{ name: 'main'}">
       <div class="columns">
         <div class="column">
@@ -29,7 +29,7 @@ export default {
       const cost = spending * price;
       const monthAvg = spending - 0.4;
       const monthCost = 8.76;
-      return `Eilisen sähkönkulutus ${spending} kW ja hinta ${price} €.
+      return `Eilisen sähkönkulutus ${spending} kW ja hinta ${cost} €.
       Edellisen kuukauden keskiarvo ${monthAvg} kWh ja hinta ${monthCost} €.
       Vastaavien käyttäjien keskiarvo ${monthAvg + 0.5} kWh ja hinta ${9} €.`
     }

@@ -1,8 +1,5 @@
 <template>
-  <div class="container">
-    <section class="hero-banner">
-      <h1 class="hero-body has-text-white">Sähkösi</h1>
-    </section>
+  <div class="">
     <div class="columns is-multiline">
       <div class="column is-one-third">
         <div class="chart-card">
@@ -201,7 +198,6 @@ export default {
       };
       this.usageCollection = {
         labels: [
-          'Lämmitys',
           'Kodinkoneet',
           'Valaistus',
           'Viihde-elektroniikka',
@@ -209,7 +205,7 @@ export default {
         ],
         datasets: [
           {
-            data: [230,100, 20, 40, 130],
+            data: [100, 20, 40, 130],
             borderWidth: 0,
             backgroundColor: [
                 'red',
@@ -221,6 +217,10 @@ export default {
           },
         ],
       };
+      if(this.$route.params.heatSelected === "Sähkö"){
+        this.usageCollection.labels.push("Lämmitys");
+        this.usageCollection.datasets[0].data.push(230);
+      }
     },
     getRandomInt () {
       return (Math.floor(Math.random() * (50 - 5 + 1)) + 5) * this.getFactor()

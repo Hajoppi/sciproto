@@ -5,9 +5,11 @@ $progress-value-background-color: #d1ad26;
 @import './styles/mainpage';
 @import './styles/chart';
 
-.container {
+.container-proto {
+  @extend .container;
   background-color: $primary;
   overflow: hidden;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 1em;
+  min-height: 100vh;
 }
